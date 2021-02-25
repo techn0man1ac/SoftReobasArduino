@@ -1,6 +1,6 @@
 # ATmega8Reobas
 
-Проект регулятора оборотов 3 вентиляторов из ПК(под управлением Windows 7/10), посредством программы, работабщей на компьютере. 
+Проект регулятора оборотов 3-х вентиляторов из ПК(под управлением Windows 7/10), посредством программы, которая работает на компьютере. 
 
 Видео с демонстрацией работы:
 
@@ -15,15 +15,13 @@ https://youtu.be/8hW6mBzUgN4?list=PLEL7qGoBXwEaDuzdx020j9YMi9B89LieX
 
 ![Board photo](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Photo.jpg "Board photo")
 
-Схема простая, не было необходимости разводить её в PCB формате.
-
-Схема платы на контроллере ATmega8:
+Схема простая, не было необходимости разводить её в PCB формате. Схема платы на контроллере ATmega8:
 
 ![Schematic ATmega8](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Schematic.jpg "Schematic ATmega8")
 
 Скрин программы для ПК(проверенно на Windows 10):
 
-![Win10 screenshot app](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Win10Scrn.jpg "Win10 screenshot app")
+![Windows10 screenshot app](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Win10Scrn.jpg "Windows10 screenshot app")
 
 Скачать можно тут:
 
