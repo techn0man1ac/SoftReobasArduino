@@ -1,4 +1,4 @@
-# ATmega8Reobas
+# ATmega8Reobas/Arduino Nano
 
 ![Board photo](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Photo.jpg "Board photo")
 
