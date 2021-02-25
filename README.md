@@ -1,5 +1,7 @@
 # ATmega8Reobas
 
+![Board photo](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Photo.jpg "Board photo")
+
 Проект регулятора оборотов 3-х вентиляторов из ПК(под управлением Windows 7/10), посредством программы, которая работает на компьютере. 
 
 Видео с демонстрацией работы:
@@ -10,10 +12,6 @@ https://youtu.be/8hW6mBzUgN4?list=PLEL7qGoBXwEaDuzdx020j9YMi9B89LieX
 Для перехода на Arduino Nano нужно закомментировать 17 и 18 строчки, и разкомментировать 12 и 13, как на картинке:
 
 ![ATmega8 or ATmega328](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/8or328.png "ATmega8 or ATmega328")
-
-Фотография платы собранной на макетке:
-
-![Board photo](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Photo.jpg "Board photo")
 
 Схема простая, не было необходимости разводить её в PCB формате. Схема платы на контроллере ATmega8/Arduino Nano(ATmega328):
 
