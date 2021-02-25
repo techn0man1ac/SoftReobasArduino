@@ -25,11 +25,9 @@ https://easyeda.com/raznie.podelki/softreobasarduino
 
 https://github.com/techn0man1ac/SoftReobasArduino/tree/main/ATmega8Reobas/Code/Arduino%20IDE/ATmega8Reobas
 
-Скрин программы для ПК(проверенно на Windows 10), написана на языке С#:
-
 ![Windows10 screenshot app](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Win10Scrn.jpg "Windows10 screenshot app")
 
-Скачать можно тут:
+Программа для ПК(проверенно на Windows 10) написана на языке С#, скачать можно тут:
 
 https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/WinApp
 
