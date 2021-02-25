@@ -18,3 +18,8 @@ https://youtu.be/8hW6mBzUgN4?list=PLEL7qGoBXwEaDuzdx020j9YMi9B89LieX
 Скрин программы для ПК(Win10):
 
 ![Win10 screenshot app](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Win10Scrn.jpg "Win10 screenshot app")
+
+
+
+Ветка проекта на форуме Arduino:
+http://arduino.ru/forum/proekty/programmno-upravlyaemyi-reobas#comment-form
