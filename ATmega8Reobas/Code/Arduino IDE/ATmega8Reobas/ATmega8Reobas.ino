@@ -1,5 +1,5 @@
 #include <EEPROM.h>  // библиотека для работы с энергонезависимой памятью
-
+// By Techn0man1ac https://github.com/techn0man1ac/SoftReobasArduino/   
 byte val1 = 0, val2 = 0, val3 = 0;
 // тип байт идеально подходит, диапазон 0-255
 unsigned long previousMillis = 0;
