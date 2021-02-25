@@ -4,7 +4,7 @@
 
 https://youtu.be/8hW6mBzUgN4?list=PLEL7qGoBXwEaDuzdx020j9YMi9B89LieX
 
-В качестве процессора выбран ATmega8
+В качестве процессора выбран ATmega8 + ему нужен USB-UART преобразователь, можно взять готовую плату Arduino Nano, где он уже имеется на плате.
 
 Фотография платы:
 
