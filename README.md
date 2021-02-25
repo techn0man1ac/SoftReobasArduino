@@ -19,7 +19,15 @@ https://youtu.be/8hW6mBzUgN4?list=PLEL7qGoBXwEaDuzdx020j9YMi9B89LieX
 
 ![Win10 screenshot app](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Win10Scrn.jpg "Win10 screenshot app")
 
+Скачать можно тут:
+
+https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/WinApp
+
+Исходники программы Fans speed controller(Windows):
+
+https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/Code/Fans%20speed%20controller(Windows)/WindowsFormsApplication1
 
 
 Ветка проекта на форуме Arduino:
-http://arduino.ru/forum/proekty/programmno-upravlyaemyi-reobas#comment-form
+
+http://arduino.ru/forum/proekty/programmno-upravlyaemyi-reobas
