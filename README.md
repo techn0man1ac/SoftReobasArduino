@@ -15,9 +15,13 @@ https://youtu.be/8hW6mBzUgN4?list=PLEL7qGoBXwEaDuzdx020j9YMi9B89LieX
 
 ![Board photo](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Photo.jpg "Board photo")
 
-Схема простая, не было необходимости разводить её в PCB формате. Схема платы на контроллере ATmega8:
+Схема простая, не было необходимости разводить её в PCB формате. Схема платы на контроллере ATmega8/Arduino Nano(ATmega328):
 
-![Schematic ATmega8](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Schematic.jpg "Schematic ATmega8")
+![Schematic ATmega8/ArduinoNano](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/Schematic_SoftReobasArduino_2021-02-25.png "Schematic ATmega8/ArduinoNano")
+
+Проект схемы на EasyEDA:
+
+https://easyeda.com/raznie.podelki/softreobasarduino
 
 Скрин программы для ПК(проверенно на Windows 10), написана на языке С#:
 
