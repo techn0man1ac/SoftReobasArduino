@@ -13,6 +13,10 @@ https://youtu.be/8hW6mBzUgN4?list=PLEL7qGoBXwEaDuzdx020j9YMi9B89LieX
 Схема платы довольно простая, построенна на контроллерах ATmega8 или Arduino Nano(ATmega328), не было необходимости разводить её в PCB формате. 
 Можно использовать как Arduino Nano, так и ATmega8, только в случае ATmega8 нужен USB-UART переходник подключить к J6 (скорость обмена 9600), а у Arduino Nano(ATmega328), где он уже имеется на плате. 5V для работы платы подавать лучше на J4, через защитный диод. 
 
+Так же, можете ознакомится с моей статьей на Habr'е "Превращаем Arduino в полноценный AVRISP программатор":
+
+https://habr.com/ru/post/247329/
+
 Проект схемы на EasyEDA:
 
 https://easyeda.com/raznie.podelki/softreobasarduino
