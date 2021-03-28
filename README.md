@@ -34,16 +34,22 @@ https://github.com/techn0man1ac/SoftReobasArduino/tree/main/ATmega8Reobas/Code/A
  
 ![Windows10 screenshot app](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/Techn0man1ac%20FSC%20V0.1%20Win10Scrn.jpg "Windows10 screenshot app")
 
-Программа для ПК(проверенно на Windows 10) написана на языке С#, скачать можно тут:
+Программа "Techn0man1ac FSC V0.1" для ПК(проверенно на Windows 10), работает следующим образом - подключаете плату к компьютеру, выбираете "Port" в выпадающем списке(слева вверху) номер COM-порта USB-UART преобразователя железки, нажимаете "Connect" - всё, можно посылать плате комманды кнопками пользовательского интерфейса:
+- "Send" - отправляет текущие значения, заданное ползунками "Fan 1", "Fan 2", "Fan 3"(по умолчанию это 127) на микроконтроллер, который запоминает эти значения в свою EEPROM(энергонезависимую память), то есть даже после перезагрузки контроллер будет помнить записаные значения;
+- "All fans max" - эта кнопка задает максимальную скорость для всех вентиляторов(тоже записывается в EEPROM);
+- "Stop all fans" - полная остановка;
+- "Reset" - Перезагрузка платы;
+- "Project on GitHub" - кнопка которая приводит пользователя сюда, на страницу проекта.
 
+Скачать программу можно тут:
 https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/WinApp
 
 # С# sourse code:
 
-Исходники программы для ПК Fans speed controller(Windows):
+Написана на языке С# в среде разработки "Microsoft Visual Studio Community 2019
+Версия 16.9.2", исходники программы для ПК Fans speed controller(Windows):
 
 https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/Code/Fans%20speed%20controller(Windows)/WindowsFormsApplication1
-
 
 # Arduino community support
 
