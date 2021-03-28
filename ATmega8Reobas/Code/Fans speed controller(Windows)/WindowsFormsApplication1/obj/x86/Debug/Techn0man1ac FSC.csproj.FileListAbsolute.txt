@@ -1,0 +1,18 @@
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\WindowsFormsApplication1\bin\Debug\Techn0man1ac fans speed controller V0.1.exe
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\WindowsFormsApplication1\bin\Debug\Techn0man1ac fans speed controller V0.1.pdb
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\WindowsFormsApplication1\obj\x86\Debug\Techn0man1ac FSC.csprojAssemblyReference.cache
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\WindowsFormsApplication1\obj\x86\Debug\Techn0man1ac_FSC.Properties.Resources.resources
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\WindowsFormsApplication1\obj\x86\Debug\Techn0man1ac FSC.csproj.GenerateResource.cache
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\WindowsFormsApplication1\obj\x86\Debug\Techn0man1ac FSC.csproj.CoreCompileInputs.cache
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\WindowsFormsApplication1\obj\x86\Debug\Techn0man1ac fans speed controller V0.1.exe
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\WindowsFormsApplication1\obj\x86\Debug\Techn0man1ac fans speed controller V0.1.pdb
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\bin\Debug\Techn0man1ac fans speed controller V0.1.exe
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\bin\Debug\Techn0man1ac fans speed controller V0.1.pdb
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\obj\x86\Debug\Techn0man1ac FSC.csprojAssemblyReference.cache
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\obj\x86\Debug\Techn0man1ac_FSC.Properties.Resources.resources
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\obj\x86\Debug\Techn0man1ac FSC.csproj.GenerateResource.cache
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\obj\x86\Debug\Techn0man1ac FSC.csproj.CoreCompileInputs.cache
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\obj\x86\Debug\Techn0man1ac fans speed controller V0.1.exe
+C:\Users\Techn0man1ac\Desktop\SoftReobasArduino-main\ATmega8Reobas\Code\Fans speed controller(Windows)\obj\x86\Debug\Techn0man1ac fans speed controller V0.1.pdb
