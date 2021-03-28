@@ -27,8 +27,12 @@ https://easyeda.com/raznie.podelki/softreobasarduino
 
 https://github.com/techn0man1ac/SoftReobasArduino/tree/main/ATmega8Reobas/Code/Arduino%20IDE/ATmega8Reobas
 
-В качестве процессора можно взять как ATmega8, так и Arduino Nano, в последнем случае нужно закомментировать 17 и 18 строчки, и разкомментировать 12 и 13, как на картинке ниже:
+В качестве процессора можно взять как ATmega8, так и Arduino Nano(по умолчанию в коде выбрано для Arduino Nano, или же ATmega328), в последнем случае нужно закомментировать 17 и 18 строчки, и разкомментировать 12 и 13, как на картинке ниже:
+
 ![ATmega8 or ATmega328](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/8or328.png "ATmega8 or ATmega328")
+
+Этими строчками задается частота ШИМ примерно в 31 кГц(чтобы не было слышно писка вентиляторов) при условии, что контроллер тактируется от частоты 16МГц. 
+Единственное, что, ATmega8 должна работать на частоте 16МГц, то есть тактироваться от внешнего кварца.
 
 # Windows application:
  
