@@ -32,7 +32,7 @@ https://github.com/techn0man1ac/SoftReobasArduino/tree/main/ATmega8Reobas/Code/A
 
 # Windows application:
  
-![Windows10 screenshot app](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Win10Scrn.jpg "Windows10 screenshot app")
+![Windows10 screenshot app](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/Techn0man1ac%20FSC%20V0.1%20Win10Scrn.jpg "Windows10 screenshot app")
 
 Программа для ПК(проверенно на Windows 10) написана на языке С#, скачать можно тут:
 
