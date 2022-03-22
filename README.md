@@ -17,7 +17,11 @@ https://youtu.be/8hW6mBzUgN4?list=PLEL7qGoBXwEaDuzdx020j9YMi9B89LieX
 
 https://habr.com/ru/post/247329/
 
-Проект схемы на EasyEDA:
+# PCB:
+
+![Board PCB](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/PCB.png "Board PCB")
+
+Проект(схемы и платы) на EasyEDA:
 
 https://easyeda.com/raznie.podelki/softreobasarduino
 
