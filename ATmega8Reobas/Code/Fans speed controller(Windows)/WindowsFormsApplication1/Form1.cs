@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-
+        /* Bases on this example http://avr-start.ru/?p=550 */ 
         private void button1_Click(object sender, EventArgs e)
         {
          
