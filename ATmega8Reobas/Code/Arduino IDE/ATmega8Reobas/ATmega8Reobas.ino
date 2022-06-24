@@ -9,8 +9,13 @@ void setup()
 {
 
   /////////////////////////////////////////////// для ATmega 328p(по умолчанию для Arduino Nano)
-  TCCR1A = 0x01; // зададим делитель для ШИМа N = 1
-  TCCR2B = 0x01; // тоже самое
+  // Pins D9 and D10 - 31.4 kHz
+  TCCR1A = 0b00000001; // 8bit
+  TCCR1B = 0b00000001; // x1 phase correct
+  // Pins D3 and D11 - 31.4 kHz
+  TCCR2B = 0b00000001; // x1
+  TCCR2A = 0b00000001; // phase correct
+  // https://nerdytechy.com/how-to-change-the-pwm-frequency-of-arduino/
   //////////////////////////////////////////////////////
 
   //////////////////////////////////////////////// для ATmega 8А
