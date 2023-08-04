@@ -40,9 +40,9 @@ void setup() {
   val2 = EEPROM.read(2);  // PWM duty cycle
   val3 = EEPROM.read(3);  // Every fan have own EEPROM Memory value
 
-  pinMode(9, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(11, OUTPUT);
+  pinMode(9, OUTPUT);  // Fan1(CN1)
+  pinMode(10, OUTPUT); // Fan2(CN2)
+  pinMode(11, OUTPUT); // Fan3(CN3)
 
   digitalWrite(9, HIGH);  // forse start all fans
   delay(2000);
