@@ -44,7 +44,11 @@ Board dimensions:
 
 ![ArduinoNano PCB dimensions](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/ArduinoNano_PCB_dimensions.png "ArduinoNano ArduinoNano PCB dimensions")
 
-Project (circuits and PCB) on EasyEDA(OSHWlab):
+Gerber files for order PCB here:
+
+https://github.com/techn0man1ac/SoftReobasArduino/tree/main/ATmega8Reobas/PCB/Gerbers
+
+Project (circuit and PCB) on EasyEDA(OSHWlab):
 
 https://oshwlab.com/raznie.podelki/softreobasarduino
 
@@ -81,3 +85,11 @@ https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/WinApp
 Program write on С# in "Microsoft Visual Studio Community 2019 V16.9.2", PS program source code - Fans speed controller(Windows):
 
 https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/Code/Fans%20speed%20controller(Windows)/WindowsFormsApplication1
+
+# Proteus 8 simulation:
+
+![Proteus 8 simulation](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Proteus%208/Proteus%208.PNG "Proteus 8 simulation")
+
+Project have Proteus 8 files and full simulate
+
+https://github.com/techn0man1ac/SoftReobasArduino/tree/main/ATmega8Reobas/Proteus%208
