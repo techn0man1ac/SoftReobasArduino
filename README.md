@@ -86,7 +86,7 @@ The protocol of interaction is very simple - the program sends into COM every se
 
 - If program send "m" - presed button "All fans max";
 - "s" - presed button "Stop all fans";
--  "r" - presed button "Reset";
+-  "r" - presed button "Reset".
 
 CPU recognized its and do some magic - easy peasy, lemon squeeze ;)
 
@@ -100,6 +100,6 @@ https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/Code/Fans%
 
 ![Proteus 8 simulation](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Proteus%208/Proteus%208.PNG "Proteus 8 simulation")
 
-Project have Proteus 8 files and full simulate
+Project have Proteus 8 files and full simulate:
 
 https://github.com/techn0man1ac/SoftReobasArduino/tree/main/ATmega8Reobas/Proteus%208
