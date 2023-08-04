@@ -82,7 +82,7 @@ https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/WinApp
 
 # Protocol
 
-The protocol of interaction is very simple - the program sends into COM every second the position of each slider in the format d127,64,255 and 127 is the speed of FAN1(CN1), 64 - FAN2(CN2), 255 - FAN3(CN3) but speed is 0..255 like 0..100%, where 255 is 100%.
+The protocol of interaction is very simple - the program sends into COM every second the position of each slider in the format d127.64.255 and 127 is the speed of FAN1(CN1), 64 - FAN2(CN2), 255 - FAN3(CN3) but speed is 0..255 like 0..100%, where 255 is 100%.
 
 - If program send "m" - presed button "All fans max";
 - "s" - presed button "Stop all fans";
