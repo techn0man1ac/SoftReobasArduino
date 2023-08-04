@@ -1,66 +1,83 @@
 # ATmega8/Arduino Nano reobas
 
-![Board photo](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Photo.jpg "Board photo")
+![PCB board photo](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/20230804_1619081.jpg "Board photo")
 
-Проект регулятора оборотов 3-х вентиляторов из ПК(под управлением Windows 7/10), посредством программы, которая работает на компьютере. Видео с демонстрацией работы:
+This project is a controller for three standard PC fans, controlled by a computer program(Windows 7/10 tested). Video with a demonstration:
 
 https://youtu.be/8hW6mBzUgN4?list=PLEL7qGoBXwEaDuzdx020j9YMi9B89LieX
 
 # Schematic:
 
-![Schematic ATmega8/ArduinoNano](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/Schematic_SoftReobasArduino_2021-02-25.png "Schematic ATmega8/ArduinoNano")
+![Schematic ATmega8/ArduinoNano](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/Schematic_SoftReobasArduino_2023-08-04.png "Schematic ATmega8/ArduinoNano")
 
-Схема платы довольно простая, построенна на контроллерах ATmega8 или Arduino Nano(ATmega328), не было необходимости разводить её в PCB формате. 
-Можно использовать как Arduino Nano, так и ATmega8, только в случае ATmega8 нужен USB-UART переходник подключить к J6 (скорость обмена 9600), а у Arduino Nano(ATmega328), где он уже имеется на плате. 5V для работы платы подавать лучше на J4, через защитный диод. 
+Schematics provide two versions of the board, one - using Arduino Nano and ULN2003(Darlington transistors package), first photo from upper, and second - using ATmega8 CPU and three MOSFET transistors in the TO-220 case(for example IRF540/IRF640/IRF740). 
 
-Так же, можете ознакомится с моей статьей на Habr'е "Превращаем Arduino в полноценный AVRISP программатор":
+![Schematic with ArduinoNano](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/ArduinoNano_schematic.png "Schematic with ArduinoNano")
 
-https://habr.com/ru/post/247329/
+I developed only the first one in PCB format, the second remained in prototype format(last photo). I like the first option because ULN2003 is popular chip that integrates everything from current-limiting resistors to protection diodes in a circuit that only requires a few components:
+
+![ULN2003 structure](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/ULN2003.png "ULN2003 structure")
+
+According to the documentation for ULN2003, the chip can output 500mA per channel, if you look at my schematic, you will see that I have paralleled two outputs for the FAN2 and FAN3 - they can output up to 1000mA per fan, and fan1 has three outputs connected in parallel, correspondingly, the output current can be up to 1500 mA, that is, a more powerful fan can be connected here. However, MOSFET solutions can produce several times more output currents.
+
+![MOSFET solution](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/ATmega8_schematic.png "MOSFET solution")
+
+You can use both solutions, Arduino Nano or ATmega8, but in the case of ATmega8, you need pre-flash the firmware(with Arduino IDE) and next step - connect a USB-UART adapter to J2 (baud rate 9600), ATmega8 solutuon - need supply +5V for the J2, Arduino Nano have all this in board.
+
+![Schematic ATmega8/ArduinoNano](https://raw.githubusercontent.com/techn0man1ac/ATmega8Reobas/main/ATmega8Reobas/Img/Photo.jpg "Schematic ATmega8/ArduinoNano")
+
+And last - in case ATmega8 you need to know how to Program an AVR Board Using an Arduino Board:
+
+[https://www.instructables.com/How-to-program-a-AVR-arduino-with-another-arduin/](https://www.instructables.com/How-to-Program-an-AVR-Board-Using-an-Arduino-Board/)
 
 # PCB:
 
-![Board PCB](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/PCB.png "Board PCB")
+The front:
 
-Проект(схемы и платы) на EasyEDA:
+![ArduinoNano ULN2003 PCB render0](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/PCB_ArduinoNano0.png "ArduinoNano ULN2003 PCB render0")
 
-https://easyeda.com/raznie.podelki/softreobasarduino
+Bottom side:
+
+![ArduinoNano ULN2003 PCB render1](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/PCB_ArduinoNano1.png "ArduinoNano ULN2003 PCB render1")
+
+Board dimensions:
+
+![ArduinoNano PCB dimensions](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/ArduinoNano_PCB_dimensions.png "ArduinoNano ArduinoNano PCB dimensions")
+
+Project (circuits and PCB) on EasyEDA(OSHWlab):
+
+https://oshwlab.com/raznie.podelki/softreobasarduino
 
 # Arduino IDE:
 
-Исходники к Arduino IDE:
+Source code for Arduino IDE:
 
 https://github.com/techn0man1ac/SoftReobasArduino/tree/main/ATmega8Reobas/Code/Arduino%20IDE/ATmega8Reobas
 
-В качестве процессора можно взять как ATmega8, так и Arduino Nano(по умолчанию в коде выбрано для Arduino Nano, или же ATmega328), в последнем случае нужно закомментировать 17 и 18 строчки, и разкомментировать 12 и 13, как на картинке ниже:
+As a CPU, you can use both, ATmega8 or Arduino Nano (by default, the code is selected for Arduino Nano, or ATmega328), in the latter case, you need to comment out lines 17 and 18, and uncomment lines 12 and 13, as in the picture below:
 
 ![ATmega8 or ATmega328](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/8or328.png "ATmega8 or ATmega328")
 
-Этими строчками задается частота ШИМ примерно в 31 кГц(чтобы не было слышно писка вентиляторов) при условии, что контроллер тактируется от частоты 16МГц. 
-Единственное, что, ATmega8 должна работать на частоте 16МГц, то есть тактироваться от внешнего кварца.
+These lines set the PWM frequency at 31 kHz (so that the squeak of the fans is not heard), provided that the controller is clocked at a frequency of 16 MHz.
+The only thing is that the ATmega8 must operate at a frequency of 16 MHz, that is, it must be clocked from an external quartz.
 
 # Windows application:
  
 ![Windows10 screenshot app](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/Techn0man1ac%20FSC%20V0.1%20Win10Scrn.jpg "Windows10 screenshot app")
 
-Программа "Techn0man1ac FSC V0.1" для ПК(проверенно на Windows 10), работает следующим образом - подключаете плату к компьютеру, выбираете в выпадающем списке "Port"(слева вверху), номер COM-порта USB-UART преобразователя железки, нажимаете "Connect" - всё, можно посылать плате комманды кнопками пользовательского интерфейса, значение каждой из них:
-- "Send" - отправляет текущие значения, заданное ползунками "Fan 1", "Fan 2", "Fan 3"(по умолчанию это 127, отображается справа от ползунка) на микроконтроллер, который запоминает эти значения в свою EEPROM(энергонезависимую память), то есть даже после перезагрузки контроллер будет помнить записаные значения;
-- "All fans max" - эта кнопка задает максимальную скорость для всех вентиляторов(тоже записывается в EEPROM);
-- "Stop all fans" - полная остановка;
-- "Reset" - Перезагрузка платы;
-- "Project on GitHub" - кнопка которая приводит пользователя сюда, на страницу проекта.
+The "Techn0man1ac FSC V0.1" program for PC (tested on Windows 10) works as - connect the board to the computer, select "Port" in the drop-down list (top left), the number of the USB-UART COM port of the hardware converter, click " Connect" - everything, you can send commands to the board using the user interface buttons, the value of each of them:
+- "Send" - sends the current values set by the "Fan 1", "Fan 2", "Fan 3" sliders (default is 127, displayed to the right of the slider) to the microcontroller, which stores these values in its EEPROM (non-volatile memory), that is, even after restart the controller will remember the recorded values;
+- "All fans max" - this button gives the maximum speed for all fans (also written to EEPROM);
+- "Stop all fans" - full stop;
+- "Reset" - reboot board;
+- "Project on GitHub" - a button that brings the user here to the project page.
 
-Скачать программу "Techn0man1ac FSC V0.1" можно тут:
+Download program "Techn0man1ac FSC V0.1":
+
 https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/WinApp
 
 # С# sourse code:
 
-Написана на языке С# в среде разработки "Microsoft Visual Studio Community 2019
-Версия 16.9.2", исходники программы для ПК Fans speed controller(Windows):
+Program write on С# in "Microsoft Visual Studio Community 2019 V16.9.2", PS program source code - Fans speed controller(Windows):
 
 https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/Code/Fans%20speed%20controller(Windows)/WindowsFormsApplication1
-
-# Arduino community support
-
-Ветка проекта на форуме Arduino:
-
-http://arduino.ru/forum/proekty/programmno-upravlyaemyi-reobas
