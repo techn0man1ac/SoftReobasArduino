@@ -56,11 +56,11 @@ https://oshwlab.com/raznie.podelki/softreobasarduino
 
 Source code for Arduino IDE:
 
-https://github.com/techn0man1ac/SoftReobasArduino/tree/main/ATmega8Reobas/Code/Arduino%20IDE/ATmega8Reobas
+https://github.com/techn0man1ac/SoftReobasArduino/tree/main/ATmega8Reobas/Code/Arduino%20IDE/SoftReobasArduino
 
-As a CPU, you can use both, ATmega8 or Arduino Nano (by default, the code is selected for Arduino Nano, or ATmega328), in the latter case, you need to comment out lines 17 and 18, and uncomment lines 12 and 13, as in the picture below:
+As a CPU, you can use both, ATmega8 or Arduino Nano (by default, the code is selected for Arduino Nano, or ATmega328), if you use ATmega8 CPU, you need to comment out lines 15,16,18,19 and uncomment lines 24 and 25, as in the picture below:
 
-![ATmega8 or ATmega328](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/8or328.png "ATmega8 or ATmega328")
+![ATmega8 or Arduino Nano](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Code/Arduino%20IDE/SoftReobasArduino/ArduinoNanoOrATmega8.png " ATmega8 or Arduino Nano")
 
 These lines set the PWM frequency at 31 kHz (so that the squeak of the fans is not heard), provided that the controller is clocked at a frequency of 16 MHz.
 The only thing is that the ATmega8 must operate at a frequency of 16 MHz, that is, it must be clocked from an external quartz.
@@ -69,16 +69,26 @@ The only thing is that the ATmega8 must operate at a frequency of 16 MHz, that i
  
 ![Windows10 screenshot app](https://raw.githubusercontent.com/techn0man1ac/SoftReobasArduino/main/ATmega8Reobas/Img/Techn0man1ac%20FSC%20V0.1%20Win10Scrn.jpg "Windows10 screenshot app")
 
-The "Techn0man1ac FSC V0.1" program for PC (tested on Windows 10) works as - connect the board to the computer, select "Port" in the drop-down list (top left), the number of the USB-UART COM port of the hardware converter, click " Connect" - everything, you can send commands to the board using the user interface buttons, the value of each of them:
-- "Send" - sends the current values set by the "Fan 1", "Fan 2", "Fan 3" sliders (default is 127, displayed to the right of the slider) to the microcontroller, which stores these values in its EEPROM (non-volatile memory), that is, even after restart the controller will remember the recorded values;
+The "Techn0man1ac FSC V0.1" program for PC (tested on Windows 7/10) works as - connect the board to the computer, run program and select "Port" in the drop-down list (top left), choose the number of the USB-UART COM port of the hardware converter, click " Connect" - well done, you can send commands to the board using the user interface buttons:
+- "Send" - sends the current values set by the "Fan 1", "Fan 2", "Fan 3" sliders (default is 127, displayed to the right of the slider) to the microcontroller, which stores these values in its EEPROM (non-volatile memory), that is, even after restart the controller will remember this values;
 - "All fans max" - this button gives the maximum speed for all fans (also written to EEPROM);
-- "Stop all fans" - full stop;
-- "Reset" - reboot board;
+- "Stop all fans" - full stop(without write into EEPROM);
+- "Reset" - restart the board;
 - "Project on GitHub" - a button that brings the user here to the project page.
 
 Download program "Techn0man1ac FSC V0.1":
 
 https://github.com/techn0man1ac/ATmega8Reobas/tree/main/ATmega8Reobas/WinApp
+
+# Protocol
+
+The protocol of interaction is very simple - the program sends into COM every second the position of each slider in the format d127,64,255 and 127 is the speed of FAN1(CN1), 64 - FAN2(CN2), 255 - FAN3(CN3) but speed is 0..255 like 0..100%, where 255 is 100%.
+
+- If program send "m" - presed button "All fans max";
+- "s" - presed button "Stop all fans";
+-  "r" - presed button "Reset";
+
+CPU recognized its and do some magic - easy peasy, lemon squeeze ;)
 
 # С# sourse code:
 
