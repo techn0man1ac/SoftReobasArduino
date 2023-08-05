@@ -4,7 +4,7 @@
 
 This project is a controller for three standard PC fans, controlled by a computer program(Windows 7/10 tested). Video with a demonstration:
 
-https://youtu.be/8hW6mBzUgN4?list=PLEL7qGoBXwEaDuzdx020j9YMi9B89LieX
+https://youtu.be/29GA7r1BqcI
 
 # Schematic:
 
