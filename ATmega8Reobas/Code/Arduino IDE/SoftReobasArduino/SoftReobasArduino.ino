@@ -130,3 +130,35 @@ void loop() {
         Serial.println(fan3Speed);
     }
 }
+
+void reboot(){  // Reset function
+
+  Serial.end();  // if necessary
+
+  asm("cli");  // interrupts off
+
+  // reset USART to reset defaults
+#ifdef __AVR_ATmega8__
+  UDR = 0;
+  UCSRA = _BV(UDRE);
+  UCSRB = 0;
+  UCSRC = _BV(URSEL) | _BV(UCSZ1) | _BV(UCSZ0);
+  UBRRL = 0;
+  UBRRH = 0;
+#else
+  UDR0 = 0;
+  UCSR0A = _BV(UDRE0);
+  UCSR0B = 0;
+  UCSR0C = _BV(UCSZ01) | _BV(UCSZ00);
+  UBRR0L = 0;
+  UBRR0H = 0;
+#endif
+
+  asm volatile("eor r1,r1");     // make sure zero-register is zero
+  asm volatile("ldi r16,0xFF");  // end of RAM (0xFF)
+  asm volatile("sts 0x5E,r16");  // SPH
+  asm volatile("sts 0x5D,r16");  // SPL
+  asm volatile("eor r31,r31");   // Clear Z register
+  asm volatile("eor r30,r30");
+  asm volatile("ijmp");  // jump to (Z)
+}
