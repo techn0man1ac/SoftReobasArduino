@@ -41,7 +41,7 @@ void setup() {
     TCCR1B = 0x02 (N = 8), 16000000(8000000) / 8 / 256 = 7812(3906) Hz
     TCCR1B = 0x01 (N = 1), 16000000(8000000) / 1 / 256 = 62500(31250) Hz
   */
-  S
+
     Serial.begin(UART_BAUDRATE);
     Serial.setTimeout(UART_SINGLE_CHAR_TIMEOUT_MS);  // time for one symbol is 4 ms - good working
 
